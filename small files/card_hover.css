@@ -1,0 +1,37 @@
+.card {
+    width: 300px; /* Điều chỉnh kích thước thẻ card theo ý muốn */
+    height: 200px; /* Điều chỉnh kích thước thẻ card theo ý muốn */
+    overflow: hidden; /* Ẩn phần ngoài của icon2 */
+    position: relative; /* Đảm bảo hover có hiệu lực trên các phần tử con */
+}
+
+.card .normal-images,
+.card .hover-images {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ không gian của thẻ card */
+    height: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ không gian của thẻ card */
+    transition: opacity 0.3s ease; /* Tạo hiệu ứng chuyển đổi mượt mà */
+}
+
+.card .normal-images {
+    opacity: 1; /* Icon1 hiển thị mặc định */
+}
+
+.card .hover-images {
+    opacity: 0; /* Icon2 ẩn ban đầu */
+}
+
+.card:hover .normal-images {
+    opacity: 0; /* Khi hover vào thẻ card, icon1 sẽ biến mất */
+}
+
+.card:hover .hover-images {
+    opacity: 1; /* Khi hover vào thẻ card, icon2 sẽ hiện lên */
+}
+
+/* Các phần còn lại của thẻ card */
+.card-title,
+.card-text,
+.arrow-right {
+    position: relative; /* Đảm bảo các phần khác không bị ẩn bởi icon */
+    z-index: 2; /* Đảm bảo các phần khác không bị ẩn bởi icon */
+}

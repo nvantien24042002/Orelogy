@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* background: #fff; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .swiper-wrapper {
+            padding-bottom: 70px;
+        }
+        #header .slider-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #header .slider-header .box {
+            color: #ffff;
+            text-align: center;
+        }
+
+        #header .slider-header .box .btn_learn {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #header .slider-header .box .btn_learn a {
+            display: block;
+            padding: 20px 27px 17px 27px;
+            background: #b7d7d7;
+            font-size: 14px;
+            text-decoration: none;
+            color: #1a1746;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper header -->
+    <div class="slider-header">
+        <div class="swiper Swiperheader">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider-header">
+                        <div class="box">
+                            <div class="box-head">
+                                <P>orelogy</P>
+                            </div>
+                            <div class="box-body">
+                                <p><b>adds $800M</b><br>to NPV across 8 mining projects in 6 months</p>
+                            </div>
+                            <div class="btn_learn">
+                                <a href="">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-header">
+                        <div class="box">
+                            <div class="box-head">
+                                <P>orelogy</P>
+                            </div>
+                            <div class="box-body">
+                                <p><b>adds $800M</b><br>to NPV across 8 mining projects in 6 months</p>
+                            </div>
+                            <div class="btn_learn">
+                                <a href="">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider-header">
+                        <div class="box">
+                            <div class="box-head">
+                                <P>orelogy</P>
+                            </div>
+                            <div class="box-body">
+                                <p><b>adds $800M</b><br>to NPV across 8 mining projects in 6 months</p>
+                            </div>
+                            <div class="btn_learn">
+                                <a href="">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var Swiper_header = new Swiper(".Swiperheader", {
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

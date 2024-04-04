@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Column Layout</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .container {
+      display: flex; /* Make the container a flexbox */
+    }
+    .left-column,
+    .right-column {
+      flex: 1; /* Distribute available space equally */
+    }
+    .left-column {
+      padding-top: 20px;
+    }
+    
+    .image-left,
+    .image-right {
+      max-width: 100%; /* Maintain image sizes */
+      height: auto;
+    }
+    
+    .right-column {
+      position: relative;
+    }
+    
+    .image-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    
+    .right-column .box-head p {
+      font-size: 36px;
+      font-weight: 100;
+    }
+    
+    .right-column .box-head,
+    .box-body p {
+      line-height: 1.4; /* Adjust for desired line spacing */
+      margin-bottom: 1.5rem; /* Add space between paragraphs */
+    }
+    
+    .right-column .btn_learn {
+      display: inline-block;
+      padding: 20px;
+      background-color: #1a1746;
+    }
+    
+    .right-column .btn_learn a {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+  <div class="container">
+    <div class="left-column">
+      <img src="hand.png" alt="Left Image" class="image-left">
+    </div>
+    <div class="right-column">
+      <img src="box_head.png" alt="Right Image" class="image-right">
+      <div class="box">
+        <div class="box-head">
+          <p>Our number one goal is to unlock the true value of your mining project</p>
+        </div>
+        <div class="box-body">
+          <p>Since 2005 orelogy’s primary focus has been on providing our clients with value.</p>
+          <p>orelogy achieve this by not only utilising smarter technical approaches, but also providing cost effective outcomes in a timely fashion.</p>
+          <p>We call our approach to consulting <b> agile thinking!</b></p>
+          <p>We “think” for our client, utilsing our experience, leading-edge technology and common sense to solve problems. Our objective is to always deliver practical, high value outcomes, not just apply cookie-cutter solutions. orelogy have a proven track record in applying world class technical solutions to mining projects from the study phase through project execution and on to the operational phase. Our team of dedicated mine strategists are fully invested in the projects we undertake and seek to consistently provide the highest value deliverable.</p>
+          <p>And we are “agile”. As a small group we can react quickly and efficiently to our clients’ needs and the markets unpredictability, changing approach and deliverables when the goal posts change.</p>
+        </div>
+        <div class="btn_learn">
+          <a href="">LEARN MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
